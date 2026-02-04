@@ -1,0 +1,27 @@
+.sales-section {
+  margin-top: 40px;
+}
+
+.sale-card {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+
+.sale-card p {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.sale-card strong {
+  color: #f84464;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .sale-card {
+    text-align: center;
+  }
+}

@@ -1,0 +1,89 @@
+.vendor-container {
+  padding: 20px;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.vendor-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #1f2533;
+}
+
+.section-title {
+  font-size: 20px;
+  margin: 30px 0 15px;
+  color: #1f2533;
+}
+
+/* Product Grid */
+.vendor-products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.vendor-card {
+  background: #ffffff;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.vendor-card:hover {
+  transform: translateY(-4px);
+}
+
+.vendor-card img {
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.vendor-card h4 {
+  font-size: 14px;
+  margin-bottom: 6px;
+  height: 36px;
+  overflow: hidden;
+}
+
+.vendor-card p {
+  font-weight: bold;
+  color: #f84464;
+}
+
+/* Actions */
+.vendor-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.vendor-actions button {
+  flex: 1;
+  margin: 0 4px;
+  border: none;
+  padding: 7px 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.vendor-actions button:first-child {
+  background: #e8e8e8;
+}
+
+.vendor-actions .delete {
+  background: #f84464;
+  color: white;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .vendor-title {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,51 @@
+.vendor-form {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.vendor-form input,
+.vendor-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+}
+
+.vendor-form textarea {
+  grid-column: span 2;
+  resize: none;
+  height: 80px;
+}
+
+.vendor-form button {
+  grid-column: span 2;
+  background: #f84464;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.vendor-form button:hover {
+  background: #d73754;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .vendor-form {
+    grid-template-columns: 1fr;
+  }
+
+  .vendor-form textarea,
+  .vendor-form button {
+    grid-column: span 1;
+  }
+}

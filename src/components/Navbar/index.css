@@ -1,0 +1,72 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1f2533;
+  padding: 12px 40px;
+  color: white;
+}
+
+
+/* Left */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f84464;
+  text-decoration: none;
+}
+
+.search-input {
+  width: 350px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+/* Right */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.city-select {
+  padding: 6px;
+  border-radius: 4px;
+  border: none;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.cart-btn {
+  background-color: #f84464;
+  padding: 6px 14px;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.logout-btn {
+  margin-left: 12px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #ff4d4d;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
